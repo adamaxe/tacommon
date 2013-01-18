@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5E3CECD616A8ED220022AA65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3CECD516A8ED220022AA65 /* Foundation.framework */; };
 		5E3CECE516A8ED230022AA65 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3CECE416A8ED230022AA65 /* SenTestingKit.framework */; };
-		5E3CECE716A8ED230022AA65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3CECE616A8ED230022AA65 /* UIKit.framework */; };
 		5E3CECE816A8ED230022AA65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3CECD516A8ED220022AA65 /* Foundation.framework */; };
 		5E3CECEB16A8ED230022AA65 /* libTACommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3CECD216A8ED220022AA65 /* libTACommon.a */; };
 		5E3CECF116A8ED230022AA65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E3CECEF16A8ED230022AA65 /* InfoPlist.strings */; };
@@ -50,7 +49,6 @@
 		5E3CECD916A8ED220022AA65 /* TACommon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TACommon-Prefix.pch"; sourceTree = "<group>"; };
 		5E3CECE316A8ED230022AA65 /* TACommonTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TACommonTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E3CECE416A8ED230022AA65 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		5E3CECE616A8ED230022AA65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		5E3CECEE16A8ED230022AA65 /* TACommonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TACommonTests-Info.plist"; sourceTree = "<group>"; };
 		5E3CECF016A8ED230022AA65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5E3CED0316A8EEA70022AA65 /* TAStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAStack.h; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E3CECE516A8ED230022AA65 /* SenTestingKit.framework in Frameworks */,
-				5E3CECE716A8ED230022AA65 /* UIKit.framework in Frameworks */,
 				5E3CECE816A8ED230022AA65 /* Foundation.framework in Frameworks */,
 				5E3CECEB16A8ED230022AA65 /* libTACommon.a in Frameworks */,
 			);
@@ -110,7 +107,6 @@
 			children = (
 				5E3CECD516A8ED220022AA65 /* Foundation.framework */,
 				5E3CECE416A8ED230022AA65 /* SenTestingKit.framework */,
-				5E3CECE616A8ED230022AA65 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

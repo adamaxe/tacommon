@@ -99,4 +99,10 @@
     return self.items.count;
 }
 
+- (NSString *)description {
+
+    return [self.items description];
+
+}
+
 @end
