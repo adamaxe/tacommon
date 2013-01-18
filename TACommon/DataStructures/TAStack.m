@@ -23,6 +23,21 @@
     return self;
 }
 
+- (id)copyWithZone:(NSZone *)zone {
+
+    id copy = [[self.class alloc] init];
+    NSEnumerator *reversedItemsEnumeration = [self.items reverseObjectEnumerator];
+    NSMutableArray *reversedItems = [[NSMutableArray alloc] initWithCapacity:self.items.count];
+
+    id nextItem;
+    while (nextItem = [reversedItemsEnumeration nextObject]) {
+        [reversedItems addObject:nextItem];
+    }
+
+    [copy pushItemsFromArray:reversedItems];
+    return copy;
+}
+
 - (void) clear {
     [self.items removeAllObjects];
 }
@@ -78,6 +93,13 @@
     }
 }
 
+- (void) pushItemsFromStack:(TAStack *) items {
+    TAStack *tempStack = [items copy];
+
+    while (!tempStack.isEmpty) {
+        [self push:[tempStack pop]];
+    }
+}
 
 - (NSUInteger) size {
     return self.items.count;

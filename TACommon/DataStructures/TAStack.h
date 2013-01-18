@@ -8,7 +8,7 @@
  @file
  */
 
-@interface TAStack : NSObject
+@interface TAStack : NSObject <NSCopying>
 
 @property (nonatomic, assign) BOOL isEmpty;
 
@@ -20,7 +20,7 @@
 /**
  Return the top of the stack without popping it.  Returns nil if empty.
 
- @return id returned Object
+ @return id returned item
  */
 - (id) peek;
 
@@ -40,24 +40,27 @@
 
 /**
  Pushes all items from an NSArray onto the stack from 1st element to last.  Allows you to reverse your array.
-
  @param NSArray collection to be pushed onto stack
  */
 - (void) pushItemsFromArray:(NSArray *) items;
 
 /**
  Pushes all items from an NSDictionary onto the stack from 1st element to last alphabetically by key.  Allows you to reverse your NSDictionary.
-
  @param NSArray collection to be pushed onto stack
  */
 - (void) pushItemsFromDictionary:(NSDictionary *) items;
 
 /**
  Pushes all items from an NSOrderedSet onto the stack.  Allows you to reverse your NSOrderedSet.
-
  @param NSOrderedSet collection to be pushed onto stack
  */
 - (void) pushItemsFromOrderedSet:(NSOrderedSet *) items;
+
+/**
+ Pushes all items from a stack onto the stack.  Original stack remains untouched.
+ @param TAStack collection to be pushed onto stack
+ */
+- (void) pushItemsFromStack:(TAStack *) items;
 
 /**
 The current size of the stack.  Returns 0 if empty.

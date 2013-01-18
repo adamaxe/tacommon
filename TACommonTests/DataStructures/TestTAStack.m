@@ -181,5 +181,39 @@
     
 }
 
+- (void)testThatPushingItemsFromAStackSetReversesTheItemOrder {
+
+    NSString *testString1 = @"testString1";
+    NSString *testString2 = @"testString2";
+    NSString *testString3 = @"testString3";
+
+    NSArray *strings = @[testString1, testString2, testString3];
+
+    TAStack *sourceStack = [[TAStack alloc] init];
+    [sourceStack pushItemsFromArray:strings];
+    [testSubject pushItemsFromStack:sourceStack];
+
+    STAssertEquals(testSubject.size, 3U, @"TAStack could not clear entries.");
+    STAssertEqualObjects(testString3, [testSubject pop], @"Last item in orderedSet is not top of stack.");
+    STAssertEqualObjects(testString2, [testSubject pop], @"Middle item of orderedSet is not middle of stack.");
+    STAssertEqualObjects(testString1, [testSubject pop], @"First item of orderedSet is not bottom of stack.");
+    
+}
+
+- (void)testThatPushingItemsFromAStackPreservesTheOriginalStack {
+
+    NSString *testString1 = @"testString1";
+    NSString *testString2 = @"testString2";
+    NSString *testString3 = @"testString3";
+
+    NSArray *strings = @[testString1, testString2, testString3];
+
+    TAStack *sourceStack = [[TAStack alloc] init];
+    [sourceStack pushItemsFromArray:strings];
+    [testSubject pushItemsFromStack:sourceStack];
+
+    STAssertEquals(sourceStack.size, 3U, @"Original TAStack should not clear entries.");
+    
+}
 
 @end
