@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5E3CECD616A8ED220022AA65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3CECD516A8ED220022AA65 /* Foundation.framework */; };
-		5E3CECDB16A8ED220022AA65 /* TACommon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E3CECDA16A8ED220022AA65 /* TACommon.h */; };
-		5E3CECDD16A8ED220022AA65 /* TACommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3CECDC16A8ED220022AA65 /* TACommon.m */; };
 		5E3CECE516A8ED230022AA65 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3CECE416A8ED230022AA65 /* SenTestingKit.framework */; };
 		5E3CECE716A8ED230022AA65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3CECE616A8ED230022AA65 /* UIKit.framework */; };
 		5E3CECE816A8ED230022AA65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3CECD516A8ED220022AA65 /* Foundation.framework */; };
 		5E3CECEB16A8ED230022AA65 /* libTACommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3CECD216A8ED220022AA65 /* libTACommon.a */; };
 		5E3CECF116A8ED230022AA65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E3CECEF16A8ED230022AA65 /* InfoPlist.strings */; };
-		5E3CECF416A8ED230022AA65 /* TACommonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3CECF316A8ED230022AA65 /* TACommonTests.m */; };
+		5E3CED0516A8EEA70022AA65 /* TAStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3CED0416A8EEA70022AA65 /* TAStack.m */; };
+		5E3CED0616A8EEA70022AA65 /* TAStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3CED0416A8EEA70022AA65 /* TAStack.m */; };
+		5E3CED0E16A8EEB90022AA65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E3CED0A16A8EEB90022AA65 /* InfoPlist.strings */; };
+		5E3CED1116A8EED00022AA65 /* TestTAStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3CED1016A8EED00022AA65 /* TestTAStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				5E3CECDB16A8ED220022AA65 /* TACommon.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,15 +45,16 @@
 		5E3CECD216A8ED220022AA65 /* libTACommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTACommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E3CECD516A8ED220022AA65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5E3CECD916A8ED220022AA65 /* TACommon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TACommon-Prefix.pch"; sourceTree = "<group>"; };
-		5E3CECDA16A8ED220022AA65 /* TACommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TACommon.h; sourceTree = "<group>"; };
-		5E3CECDC16A8ED220022AA65 /* TACommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TACommon.m; sourceTree = "<group>"; };
 		5E3CECE316A8ED230022AA65 /* TACommonTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TACommonTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E3CECE416A8ED230022AA65 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		5E3CECE616A8ED230022AA65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		5E3CECEE16A8ED230022AA65 /* TACommonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TACommonTests-Info.plist"; sourceTree = "<group>"; };
 		5E3CECF016A8ED230022AA65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5E3CECF216A8ED230022AA65 /* TACommonTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TACommonTests.h; sourceTree = "<group>"; };
-		5E3CECF316A8ED230022AA65 /* TACommonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TACommonTests.m; sourceTree = "<group>"; };
+		5E3CED0316A8EEA70022AA65 /* TAStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAStack.h; sourceTree = "<group>"; };
+		5E3CED0416A8EEA70022AA65 /* TAStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAStack.m; sourceTree = "<group>"; };
+		5E3CED0B16A8EEB90022AA65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		5E3CED1016A8EED00022AA65 /* TestTAStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTAStack.m; sourceTree = "<group>"; };
+		5E3CED1216A8EF560022AA65 /* TACommonTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TACommonTests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +112,12 @@
 		5E3CECD716A8ED220022AA65 /* TACommon */ = {
 			isa = PBXGroup;
 			children = (
-				5E3CECDA16A8ED220022AA65 /* TACommon.h */,
-				5E3CECDC16A8ED220022AA65 /* TACommon.m */,
+				5E3CECFD16A8ED820022AA65 /* Algorithms */,
+				5E3CECFE16A8ED820022AA65 /* Controller */,
+				5E3CECFF16A8ED820022AA65 /* DataStructures */,
+				5E3CED0016A8ED820022AA65 /* Math */,
+				5E3CED0116A8ED820022AA65 /* Model */,
+				5E3CED0216A8ED820022AA65 /* View */,
 				5E3CECD816A8ED220022AA65 /* Supporting Files */,
 			);
 			path = TACommon;
@@ -129,8 +134,11 @@
 		5E3CECEC16A8ED230022AA65 /* TACommonTests */ = {
 			isa = PBXGroup;
 			children = (
-				5E3CECF216A8ED230022AA65 /* TACommonTests.h */,
-				5E3CECF316A8ED230022AA65 /* TACommonTests.m */,
+				5E3CED0716A8EEB90022AA65 /* Algorithms */,
+				5E3CED0816A8EEB90022AA65 /* DataStructures */,
+				5E3CED0916A8EEB90022AA65 /* en.lproj */,
+				5E3CED0C16A8EEB90022AA65 /* Math */,
+				5E3CED0D16A8EEB90022AA65 /* Model */,
 				5E3CECED16A8ED230022AA65 /* Supporting Files */,
 			);
 			path = TACommonTests;
@@ -139,10 +147,92 @@
 		5E3CECED16A8ED230022AA65 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5E3CED1216A8EF560022AA65 /* TACommonTests-Prefix.pch */,
 				5E3CECEE16A8ED230022AA65 /* TACommonTests-Info.plist */,
 				5E3CECEF16A8ED230022AA65 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E3CECFD16A8ED820022AA65 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		5E3CECFE16A8ED820022AA65 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5E3CECFF16A8ED820022AA65 /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				5E3CED0316A8EEA70022AA65 /* TAStack.h */,
+				5E3CED0416A8EEA70022AA65 /* TAStack.m */,
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		5E3CED0016A8ED820022AA65 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		5E3CED0116A8ED820022AA65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5E3CED0216A8ED820022AA65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E3CED0716A8EEB90022AA65 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		5E3CED0816A8EEB90022AA65 /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				5E3CED1016A8EED00022AA65 /* TestTAStack.m */,
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		5E3CED0916A8EEB90022AA65 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				5E3CED0A16A8EEB90022AA65 /* InfoPlist.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		5E3CED0C16A8EEB90022AA65 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		5E3CED0D16A8EEB90022AA65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E3CECF116A8ED230022AA65 /* InfoPlist.strings in Resources */,
+				5E3CED0E16A8EEB90022AA65 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E3CECDD16A8ED220022AA65 /* TACommon.m in Sources */,
+				5E3CED0516A8EEA70022AA65 /* TAStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +342,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E3CECF416A8ED230022AA65 /* TACommonTests.m in Sources */,
+				5E3CED0616A8EEA70022AA65 /* TAStack.m in Sources */,
+				5E3CED1116A8EED00022AA65 /* TestTAStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +362,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				5E3CECF016A8ED230022AA65 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5E3CED0A16A8EEB90022AA65 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E3CED0B16A8EEB90022AA65 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -356,7 +456,7 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TACommon/TACommon-Prefix.pch";
+				GCC_PREFIX_HEADER = "TACommonTests/TACommonTests-Prefix.pch";
 				INFOPLIST_FILE = "TACommonTests/TACommonTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -371,7 +471,7 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TACommon/TACommon-Prefix.pch";
+				GCC_PREFIX_HEADER = "TACommonTests/TACommonTests-Prefix.pch";
 				INFOPLIST_FILE = "TACommonTests/TACommonTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
