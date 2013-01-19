@@ -33,6 +33,9 @@
 		5E3CED1416A90EBE0022AA65 /* TestTAQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3CED1316A90EBE0022AA65 /* TestTAQueue.m */; };
 		5E3CED1716A90EC60022AA65 /* TAQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3CED1616A90EC60022AA65 /* TAQueue.m */; };
 		5E3CED1816A90EC60022AA65 /* TAQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3CED1616A90EC60022AA65 /* TAQueue.m */; };
+		5E3CED2716AB1A5C0022AA65 /* TestTAMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3CED2516AB1A5C0022AA65 /* TestTAMath.m */; };
+		5E3CED2A16AB1CA60022AA65 /* TAMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3CED2916AB1CA60022AA65 /* TAMath.m */; };
+		5E3CED2B16AB1CA60022AA65 /* TAMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3CED2916AB1CA60022AA65 /* TAMath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,9 @@
 		5E3CED1316A90EBE0022AA65 /* TestTAQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTAQueue.m; sourceTree = "<group>"; };
 		5E3CED1516A90EC60022AA65 /* TAQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAQueue.h; sourceTree = "<group>"; };
 		5E3CED1616A90EC60022AA65 /* TAQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAQueue.m; sourceTree = "<group>"; };
+		5E3CED2516AB1A5C0022AA65 /* TestTAMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTAMath.m; sourceTree = "<group>"; };
+		5E3CED2816AB1C9F0022AA65 /* TAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAMath.h; sourceTree = "<group>"; };
+		5E3CED2916AB1CA60022AA65 /* TAMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAMath.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +137,6 @@
 				5E3CECFD16A8ED820022AA65 /* Algorithms */,
 				5E3CECFE16A8ED820022AA65 /* Controller */,
 				5E3CECFF16A8ED820022AA65 /* DataStructures */,
-				5E3CED0016A8ED820022AA65 /* Math */,
 				5E3CED0116A8ED820022AA65 /* Model */,
 				5E3CED0216A8ED820022AA65 /* View */,
 				5E3CECD816A8ED220022AA65 /* Supporting Files */,
@@ -173,6 +178,8 @@
 		5E3CECFD16A8ED820022AA65 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				5E3CED2816AB1C9F0022AA65 /* TAMath.h */,
+				5E3CED2916AB1CA60022AA65 /* TAMath.m */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -195,13 +202,6 @@
 			path = DataStructures;
 			sourceTree = "<group>";
 		};
-		5E3CED0016A8ED820022AA65 /* Math */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Math;
-			sourceTree = "<group>";
-		};
 		5E3CED0116A8ED820022AA65 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +219,7 @@
 		5E3CED0716A8EEB90022AA65 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				5E3CED2516AB1A5C0022AA65 /* TestTAMath.m */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -369,6 +370,7 @@
 			files = (
 				5E3CED0516A8EEA70022AA65 /* TAStack.m in Sources */,
 				5E3CED1716A90EC60022AA65 /* TAQueue.m in Sources */,
+				5E3CED2A16AB1CA60022AA65 /* TAMath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +382,8 @@
 				5E3CED1116A8EED00022AA65 /* TestTAStack.m in Sources */,
 				5E3CED1416A90EBE0022AA65 /* TestTAQueue.m in Sources */,
 				5E3CED1816A90EC60022AA65 /* TAQueue.m in Sources */,
+				5E3CED2716AB1A5C0022AA65 /* TestTAMath.m in Sources */,
+				5E3CED2B16AB1CA60022AA65 /* TAMath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
