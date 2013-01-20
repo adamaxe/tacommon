@@ -43,12 +43,58 @@
 
 }
 
-- (void)testThatGCDOfTwoPrimesAre1 {
+- (void)testThatGCDOfTwoPrimesIs1 {
     STAssertEquals(gcd(5, 7), 1, nil);
     STAssertEquals(gcd(1009, 3137), 1, nil);
     STAssertEquals(gcd(43, 1201), 1, nil);
 
 }
+
+- (void)testThatPrimesReturnsNeither0Nor1 {
+    int upperLimit = 10;
+    int generatedPrimes[upperLimit];
+    primes(generatedPrimes, upperLimit);
+
+    STAssertTrue(generatedPrimes[0] != 0, @"The first prime found was 0.");
+    STAssertTrue(generatedPrimes[0] != 1, @"The first prime found was 1.");
+}
+
+- (void)testThatPrimesFirstPrimeIs2 {
+    int upperLimit = 10;
+    int generatedPrimes[upperLimit];
+    primes(generatedPrimes, upperLimit);
+
+    STAssertTrue(generatedPrimes[0] == 2, @"The first prime found was 2.");
+}
+
+- (void)testThatPrimesReturnsFirst20NumbersArePrime {
+    int upperLimit = 20;
+    int generatedPrimes[upperLimit];
+    
+    primes(generatedPrimes, upperLimit);
+
+    int actualPrimes[20] = {2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71};
+    
+    for (int i = 0; i < 20; i++) {
+        STAssertTrue(generatedPrimes[i] == actualPrimes[i], @"Prime:%d does not match", i);
+    }
+
+}
+
+- (void)testThatPrimesReturnsTheLast10NumbersReturnedOutOf10000ArePrime {
+    int upperLimit = 10000;
+    int generatedPrimes[upperLimit];
+
+    primes(generatedPrimes, upperLimit);
+
+    int actualPrimes[10] = {104677,104681,104683,104693,104701,104707,104711,104717,104723,104729};
+
+    for (int i = 0, j = 9990; i < 10; i++, j++) {
+        STAssertTrue(generatedPrimes[j] == actualPrimes[i], @"Prime:%d does not match", i);
+    }
+
+}
+
 
 
 @end
