@@ -33,9 +33,17 @@ extern int gcd(unsigned int, unsigned int);
 extern void primes(unsigned int[], size_t);
 
 /**
- Checks whether a number is prime
+ Checks whether a number is prime by seeing if number is divisible by any unsigned int between 2 and sqrt(number to check)
  
  @param int number to check
  @return BOOL whether or not requested int was prime
  */
 extern BOOL isPrime(unsigned int);
+
+/**
+ Fills an array with fibonacci numbers up to size.  
+
+ @param int* container array to hold requested primes
+ @param size_t number of primes requested
+ */
+extern void fibonaccis(unsigned int[], size_t);

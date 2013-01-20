@@ -79,3 +79,18 @@ BOOL isPrime(unsigned int numberToCheck) {
     return isAFactor;
 
 }
+
+void fibonaccis(unsigned int fibonacciNumbers[], size_t size) {
+
+    if (size < 1) {
+        return;
+    }
+
+    fibonacciNumbers[0] = 0;
+    fibonacciNumbers[1] = 1;
+
+    for (int i = 2; i < size; i++) {
+        fibonacciNumbers[i] = fibonacciNumbers[i-2] + fibonacciNumbers[i-1];
+    }
+
+}

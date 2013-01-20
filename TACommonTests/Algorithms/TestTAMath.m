@@ -103,17 +103,29 @@
     STAssertFalse(isPrime(1), @"0 is not prime");
 }
 
-- (void)testThatIsPrimeReturnsYesForFirst100Primes {
+- (void)testThatFibonaccisReturnsFirstAndSecondFibonacciAre0And1 {
+    int upperLimit = 2;
+    unsigned int generatedFibonacci[upperLimit];
 
-    int upperLimit = 101;
-    unsigned int generatedPrimes[upperLimit];
+    fibonaccis(generatedFibonacci, upperLimit);
 
-    primes(generatedPrimes, upperLimit);
+    STAssertTrue(generatedFibonacci[0] == 0, @"Fibonacci: 0  does not match");
+    STAssertTrue(generatedFibonacci[1] == 1, @"Fibonacci: 1  does not match");
 
-    for (int i = 0; i < upperLimit; i++) {
-        STAssertTrue(isPrime(generatedPrimes[i]), @"%d is not prime", generatedPrimes[i]);
+}
+
+- (void)testThatFibonaccisReturnsFirst20NumbersAreFibonacci {
+    int upperLimit = 20;
+    unsigned int generatedFibonacci[upperLimit];
+
+    fibonaccis(generatedFibonacci, upperLimit);
+
+    int actualFibonaccis[20] = {0,1,1,2,3,5,8,13,21,34,55,89,144, 233, 377, 610, 987, 1597, 2584, 4181};
+
+    for (int i = 0; i < 20; i++) {
+        STAssertTrue(generatedFibonacci[i] == actualFibonaccis[i], @"Fibonacci:%d does not match", generatedFibonacci[i]);
     }
-
+    
 }
 
 
