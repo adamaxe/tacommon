@@ -52,7 +52,7 @@
 
 - (void)testThatPrimesReturnsNeither0Nor1 {
     int upperLimit = 10;
-    int generatedPrimes[upperLimit];
+    unsigned int generatedPrimes[upperLimit];
     primes(generatedPrimes, upperLimit);
 
     STAssertTrue(generatedPrimes[0] != 0, @"The first prime found was 0.");
@@ -61,7 +61,7 @@
 
 - (void)testThatPrimesFirstPrimeIs2 {
     int upperLimit = 10;
-    int generatedPrimes[upperLimit];
+    unsigned int generatedPrimes[upperLimit];
     primes(generatedPrimes, upperLimit);
 
     STAssertTrue(generatedPrimes[0] == 2, @"The first prime found was 2.");
@@ -69,7 +69,7 @@
 
 - (void)testThatPrimesReturnsFirst20NumbersArePrime {
     int upperLimit = 20;
-    int generatedPrimes[upperLimit];
+    unsigned int generatedPrimes[upperLimit];
     
     primes(generatedPrimes, upperLimit);
 
@@ -83,7 +83,7 @@
 
 - (void)testThatPrimesReturnsTheLast10NumbersReturnedOutOf10000ArePrime {
     int upperLimit = 10000;
-    int generatedPrimes[upperLimit];
+    unsigned int generatedPrimes[upperLimit];
 
     primes(generatedPrimes, upperLimit);
 
@@ -91,6 +91,27 @@
 
     for (int i = 0, j = 9990; i < 10; i++, j++) {
         STAssertTrue(generatedPrimes[j] == actualPrimes[i], @"Prime:%d does not match", i);
+    }
+
+}
+
+- (void)testThatIsPrimeReturnsFalseFor0 {
+    STAssertFalse(isPrime(0), @"0 is not prime");
+}
+
+- (void)testThatIsPrimeReturnsFalseFor1 {
+    STAssertFalse(isPrime(1), @"0 is not prime");
+}
+
+- (void)testThatIsPrimeReturnsYesForFirst100Primes {
+
+    int upperLimit = 101;
+    unsigned int generatedPrimes[upperLimit];
+
+    primes(generatedPrimes, upperLimit);
+
+    for (int i = 0; i < upperLimit; i++) {
+        STAssertTrue(isPrime(generatedPrimes[i]), @"%d is not prime", generatedPrimes[i]);
     }
 
 }

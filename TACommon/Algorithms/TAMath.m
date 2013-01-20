@@ -4,7 +4,7 @@
 
 #import "TAMath.h"
 
-extern int gcd(int argument1, int argument2) {
+int gcd(unsigned int argument1, unsigned int argument2) {
     int gcdFinal = 0;
 
     //Ensure both elements > 0
@@ -23,7 +23,7 @@ extern int gcd(int argument1, int argument2) {
 
 }
 
-extern void primes(int locatedPrimes[], size_t size) {
+void primes(unsigned int locatedPrimes[], size_t size) {
 
     if (size < 1) {
         return;
@@ -56,5 +56,26 @@ extern void primes(int locatedPrimes[], size_t size) {
 
         nextOddNumber += 2;
     }
+
+}
+
+BOOL isPrime(unsigned int numberToCheck) {
+
+    if (numberToCheck < 2) {
+        return NO;
+    }
+
+    unsigned int lowerBounds = sqrt(numberToCheck);
+
+    BOOL isAFactor = YES;
+
+    for (unsigned int i = 2; i <= lowerBounds; i++) {
+        if (numberToCheck % i == 0) {
+            isAFactor = NO;
+            break;
+        }
+    }
+
+    return isAFactor;
 
 }

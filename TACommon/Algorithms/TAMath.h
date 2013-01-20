@@ -22,7 +22,7 @@
  @return int greatest common divisor for two arguments
  */
 
-extern int gcd(int, int);
+extern int gcd(unsigned int, unsigned int);
 
 /**
  Fills an array with prime numbers up to size.  Uses Sieve of Eratosthenes.  Assume all numbers are prime, remove all multiples of every number.
@@ -30,5 +30,12 @@ extern int gcd(int, int);
  @param int* container array to hold requested primes
  @param size_t number of primes requested 
  */
-extern void primes(int[], size_t size);
+extern void primes(unsigned int[], size_t);
 
+/**
+ Checks whether a number is prime
+ 
+ @param int number to check
+ @return BOOL whether or not requested int was prime
+ */
+extern BOOL isPrime(unsigned int);
